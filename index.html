@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETCH-A-SKETCH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-header">
+        <h1> Etch-a-Sketch </h1>
+    </div>
+    <div id="main-container">
+        <div class="nav">
+            <div id="color-picker">
+                <input type="color" id="colorPicker"/>
+            </div>
+            <div class="btn" id="color">
+                <p>Choose Color</p>
+            </div>
+            <div class="btn" id="rainbow">
+                <p>Rainbow</p>
+            </div>
+            <div class="btn" id="eraser">
+                <p>Eraser</p>
+            </div>
+            <a class="clear-btn" id="clear">
+                Clear
+            </a>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
+                <p>Value: <span id="demo"></span></p>
+            </div>
+        </div>
+        <div id="grid"></div>
+    </div>
+    <footer class="footer">
+        <p>Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear())
+              </script>
+              Aditya
+            </p>
+            <a href="https://github.com/aditya16003" target="_blank">
+              <i class="fab fa-github"></i
+            ></a>
+          </footer>
+    </footer>
+    <script src="sketch.js"></script>
+</body>
+</html>
